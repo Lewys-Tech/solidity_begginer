@@ -25,6 +25,7 @@ contract SimpleStorage{
 
     function addPerson(string memory _name, uint256 _favouriteNumber) public {
     listOfPeople.push(Person(_favouriteNumber, _name) );
+    
     nameToFavouriteNumber[_name] = _favouriteNumber;
     
         
